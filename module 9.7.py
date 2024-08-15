@@ -3,7 +3,7 @@
 def is_prime(func):
     def wrapper(a, b, c):
         origin_result = func(a, b, c)
-        if origin_result > 2:
+        if origin_result > 1:
             for n in range(2, origin_result - 1):
                 if origin_result % n == 0:
                     print('Составное')
